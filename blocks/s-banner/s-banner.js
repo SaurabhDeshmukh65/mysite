@@ -1,4 +1,6 @@
 export default function decorate(block) {
+  block.classList.add('s-banner-block'); // Add this line
+
   const rows = Array.from(block.children);
 
   rows.forEach((row, rowIndex) => {

@@ -1,19 +1,26 @@
+/* Entire block background */
+.s-banner-block {
+  background-color: #000;
+  padding: 20px; /* Optional: adds spacing inside the block */
+}
+
+/* Title section */
 .s-banner-title {
   text-align: center;
-  background-color: #000
+  background-color: #000;
 }
 
 .s-banner-title-text {
-  font-size: 24px;
+  font-size: 64px;
   font-weight: bold;
   color: white;
-  background-color: #000
-  ;
+  background-color: #000;
 }
 
+/* Subtitle section */
 .s-banner-subtitle {
   text-align: center;
-  background-color: #000
+  background-color: #000;
 }
 
 .s-banner-subtitle-text {
@@ -21,6 +28,7 @@
   color: #ccc;
 }
 
+/* Image section */
 .s-banner-image {
   text-align: center;
 }
