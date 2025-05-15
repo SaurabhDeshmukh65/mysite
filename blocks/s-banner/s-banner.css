@@ -1,44 +1,27 @@
-
-.s-banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #333;
-  color: white;
-  padding: 32px;
+.s-banner-title {
   text-align: center;
 }
 
-.s-banner-header {
-  font-size: 64px;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-}
-
-.s-banner-content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 16px 0;
-}
-
-.s-banner-title {
-  font-size: 64px;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+.s-banner-title-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
 }
 
 .s-banner-subtitle {
+  text-align: center;
+}
+
+.s-banner-subtitle-text {
   font-size: 16px;
   color: #ccc;
 }
 
 .s-banner-image {
-  width: 100%;
-  padding: 16px 0;
+  text-align: center;
 }
 
-.s-banner-image img {
+.s-banner-image-content {
   width: 100%;
   border-radius: 8px;
 }
