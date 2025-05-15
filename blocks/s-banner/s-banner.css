@@ -1,3 +1,4 @@
+
 .s-banner {
   display: flex;
   flex-direction: column;
@@ -21,8 +22,9 @@
 }
 
 .s-banner-title {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 64px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
 }
 
 .s-banner-subtitle {
