@@ -1,15 +1,19 @@
 .s-banner-title {
   text-align: center;
+  background-color: #000
 }
 
 .s-banner-title-text {
   font-size: 24px;
   font-weight: bold;
   color: white;
+  background-color: #000
+  ;
 }
 
 .s-banner-subtitle {
   text-align: center;
+  background-color: #000
 }
 
 .s-banner-subtitle-text {
