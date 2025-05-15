@@ -1,0 +1,41 @@
+.s-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 32px;
+  text-align: center;
+}
+
+.s-banner-header {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.s-banner-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 0;
+}
+
+.s-banner-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.s-banner-subtitle {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.s-banner-image {
+  width: 100%;
+  padding: 16px 0;
+}
+
+.s-banner-image img {
+  width: 100%;
+  border-radius: 8px;
+}
