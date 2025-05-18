@@ -1,0 +1,33 @@
+/* Table styling */
+.eds-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.eds-table td, .eds-table th {
+  padding: 10px;
+  color: #ffffff;
+  vertical-align: middle;
+  border: 1px solid #333;
+}
+
+/* Table header styling */
+.eds-table th {
+  background-color: #333;
+}
+
+/* Sign Up button styling */
+.eds-signup-btn {
+  background-color: #ff6f00;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.eds-signup-btn:hover {
+  background-color: #e65c00;
+}
