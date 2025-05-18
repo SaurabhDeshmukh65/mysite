@@ -1,0 +1,47 @@
+/* Title and paragraph styling */
+.cmp-textblock h1,
+.cmp-textblock h2 {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+ 
+.cmp-textblock p {
+  color: #cccccc;
+  line-height: 1.6;
+}
+ 
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+ 
+table td {
+  padding: 10px;
+  color: #ffffff;
+  vertical-align: middle;
+}
+ 
+/* Skill bar container */
+.skill-bar {
+  background-color: #333;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+ 
+/* Skill bar fill */
+.skill-bar-fill {
+  background-color: #ff6f00;
+  height: 100%;
+  width: 0;
+  transition: width 1.5s ease-in-out;
+  border-radius: 20px 0 0 20px;
+}

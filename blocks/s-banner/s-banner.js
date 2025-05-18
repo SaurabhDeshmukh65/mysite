@@ -1,5 +1,5 @@
 export default function decorate(block) {
-  block.classList.add('s-banner-block'); // Add this line
+  block.classList.add('s-banner-block');
 
   const rows = Array.from(block.children);
 
@@ -9,16 +9,14 @@ export default function decorate(block) {
       if (rowIndex === 0) {
         if (colIndex === 0) {
           col.classList.add('s-banner-title');
-          col.querySelector('h1').classList.add('s-banner-title-text');
         } else if (colIndex === 1) {
           col.classList.add('s-banner-subtitle');
-          col.querySelector('p').classList.add('s-banner-subtitle-text');
         }
       } else if (rowIndex === 1) {
         col.classList.add('s-banner-image');
         const pic = col.querySelector('picture');
         if (pic) {
-          pic.classList.add('s-banner-image-content');
+          pic.classList.add('s-banner-image');
         }
       }
     });
