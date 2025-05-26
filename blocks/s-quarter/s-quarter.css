@@ -1,0 +1,31 @@
+.s-quarter-block {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(241, 241, 241);
+    padding: 2rem;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-left: 120px;
+    margin-top: 16px;
+    font: Montserrat, sans-serif;
+    
+  }
+  
+  .s-quarter-col {
+    flex: 1;
+    padding: 1rem;
+    
+  }  
+  
+  .s-quarter-number {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .s-quarter-label {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    margin-top: 0.5rem;
+  }
+  

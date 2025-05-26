@@ -1,0 +1,47 @@
+.skills-block {
+    width: auto;
+    max-width: auto;
+    font-family: Arial, sans-serif;    
+    background: #000;
+    border-radius: 8px;
+    margin-left: 120px;
+  }
+  
+  .skills-title {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    
+  }
+  
+  .skill {
+    margin: 10px 0px;
+    color: rgb(241, 241, 241);
+    
+    
+  }
+  
+  .skill-label {
+    display: block;
+    margin: 15px 0px;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 4px;
+    color:rgb(117, 117, 117);
+  }
+  
+  .progress-bar {
+    background-color: #fff;
+    height: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: rgb(97, 97, 97);
+   
+    
+  }
+  

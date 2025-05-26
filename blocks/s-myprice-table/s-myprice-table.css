@@ -1,33 +1,134 @@
-/* Table styling */
-.eds-table {
+/* Body styling */
+body.s-myprice-body {
+  background-color: #f1f1f1;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+/* Title extracted from the first row */
+.s-myprice-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 120px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-family: Montserrat, sans-serif;
+  color: rgb(241, 241, 241);
+}
+
+/* Table container */
+.s-myprice-table {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 120px);
+  font-family: Montserrat, sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-left: 120px;
+  padding-right: 120px;
+  background-color: #000;
+}
+
+/* Each row in the table */
+.s-myprice-row {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  column-gap: 16px;
+  background-color: #000;
 }
 
-.eds-table td, .eds-table th {
-  padding: 10px;
-  color: #ffffff;
-  vertical-align: middle;
-  border: 1px solid #333;
+/* Each column in a row */
+.s-myprice-col {
+  flex: 1;
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  white-space: normal;
+  line-height: 1.5;
 }
 
-/* Table header styling */
-.eds-table th {
-  background-color: #333;
+/* Brighten entire column on hover */
+.s-myprice-col-hover {
+  opacity: 1 !important;
 }
 
-/* Sign Up button styling */
-.eds-signup-btn {
-  background-color: #ff6f00;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+/* Header row styling */
+.s-myprice-header {
+  background-color: rgb(97, 97, 97);
+  color: rgb(221, 221, 221);
+  font-size: 24px;
+  padding: 32px 16px;
   text-align: center;
 }
 
-.eds-signup-btn:hover {
-  background-color: #e65c00;
+/* Feature rows styling */
+.s-myprice-feature {
+  background-color: #fff;
+  font-size: 1rem;
+  color: #000;
+  height: 35.3px;
+}
+
+/* Special second-last row styling */
+.s-myprice-special {
+  background-color: #fff;
+  font-size: 1rem;
+  color: #000;
+  min-height: 70px;
+  white-space: normal;
+  line-height: 1.4;
+}
+
+/* First line in second-last row */
+.s-myprice-special-title {
+  color: rgb(0, 0, 0);
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* Signup row styling */
+.s-myprice-signup {
+  background-color: #F1F1F1;
+  padding: 16px;
+  color: #000;
+}
+
+/* Unique button container */
+.s-myprice-action-container {
+  width: 100px;
+  height: 35px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Active state after click */
+.s-myprice-action-container.clicked {
+  background-color: #000;
+}
+
+/* Unique button styling */
+.s-myprice-action-button {
+  background-color: transparent;
+  color: #000;
+  padding: 10px 24px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.s-myprice-action-button:hover {
+  background-color: #4caf50;
+  color: #fff;
 }
