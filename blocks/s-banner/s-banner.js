@@ -9,6 +9,7 @@ export default function decorate(block) {
       if (rowIndex === 0) {
         if (colIndex === 0) {
           col.classList.add('s-banner-title');
+          col.setAttribute('id', 'home'); 
         } else if (colIndex === 1) {
           col.classList.add('s-banner-subtitle');
         }

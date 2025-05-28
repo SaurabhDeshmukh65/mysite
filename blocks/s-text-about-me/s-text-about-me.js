@@ -12,6 +12,7 @@ export default function decorate(block) {
 
   if (titleCell) {
     const title = document.createElement('h3');
+    title.setAttribute('id', 'about');
     title.textContent = titleCell.textContent.trim();
     block.appendChild(title);
   }

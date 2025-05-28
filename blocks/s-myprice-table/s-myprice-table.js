@@ -46,7 +46,6 @@ export default function decorate(block) {
       } else if (rowIndex === secondLastIndex) {
         col.classList.add('s-myprice-special');
 
-        // Apply special styling to the first child
         const firstChild = col.firstElementChild;
         if (firstChild) {
           firstChild.classList.add('s-myprice-special-title');

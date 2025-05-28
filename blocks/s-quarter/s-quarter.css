@@ -2,19 +2,22 @@
     display: flex;
     justify-content: space-between;
     background-color: rgb(241, 241, 241);
-    padding: 2rem;
     text-align: center;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-left: 120px;
+    margin-left: 144px;
     margin-top: 16px;
-    font: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif !important;
+    
+    margin-right: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     
   }
   
   .s-quarter-col {
     flex: 1;
-    padding: 1rem;
+    padding: 0px;
     
   }  
   
@@ -26,6 +29,29 @@
   .s-quarter-label {
     font-size: 15px;
     color: rgb(0, 0, 0);
-    margin-top: 0.5rem;
+   
   }
+
+  /* .s-quarter-button a{
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+  }
+   
+  .s-quarter-button a {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+   
+  .s-quarter-button a:hover {
+    background-color: #333;
+  } */
+   
   
