@@ -16,7 +16,7 @@ export default function decorate(block) {
         label.classList.add('s-sidebar-label');
   
         if (index !== 0) {
-          const text = label.textContent.trim().toLowerCase();
+          const text = label.textContent.trim().toLowerCase().replace(/\s+/g, '-');
           const anchor = document.createElement('a');
           anchor.href = `#${text}`;
           anchor.textContent = label.textContent;
@@ -26,9 +26,12 @@ export default function decorate(block) {
         }
       }
   
-      // First item is display-only
       if (index === 0) {
         item.classList.add('s-sidebar-display');
+        const img = item.querySelector('img');
+        if (img) {
+          img.classList.add('s-sidebar-natural');
+        }
       }
     });
   
