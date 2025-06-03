@@ -28,14 +28,15 @@
   display: flex;
   gap: 16px;
   align-items: flex-start;
+  width: auto;
 }
 
 /* Each column stacks images vertically */
 .s-photo-column {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  width: 701.6px;
+  gap: 8px;
+  
 }
 
 /* Each image box wraps tightly around the image */

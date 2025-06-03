@@ -6,7 +6,7 @@ export default function decorate(block) {
   wrapper.classList.add('s-photos-wrapper');
 
   const headerRow = rows[0];
-  const headerText = headerRow?.children[0]?.textContent || 'Gallery';
+  const headerText = headerRow?.children[0]?.textContent || '';
   const header = document.createElement('div');
   header.classList.add('s-photos-header');
   header.setAttribute('id', 'photos');
@@ -40,32 +40,8 @@ export default function decorate(block) {
       const newImg = document.createElement('img');
       newImg.classList.add('s-photo-img');
 
-      // Lazy loading
-      if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const target = entry.target;
-              if (target.dataset.src) {
-                target.src = target.dataset.src;
-                target.removeAttribute('data-src');
-              }
-              observer.unobserve(target);
-            }
-          });
-        }, {
-          rootMargin: '0px 0px 100px 0px'
-        });
-
-        if (img.src) {
-          newImg.dataset.src = img.src;
-        }
-        if (newImg.dataset.src) {
-          observer.observe(newImg);
-        }
-      } else {
-        newImg.src = img.src;
-      }
+      // Directly set image source (no lazy loading)
+      newImg.src = img.src;
 
       picture.appendChild(newImg);
       item.appendChild(picture);
