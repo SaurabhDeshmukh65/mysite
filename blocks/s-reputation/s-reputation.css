@@ -1,3 +1,6 @@
+body{
+  background: #000;
+}
 .s-rep-block {
     background-color: #000;
     padding-left:24px;
@@ -13,6 +16,8 @@
     margin-top: 10PX;
     font-weight: 400 !important; 
     font-family: "Montserrat", sans-serif !important;
+    color: rgb(241, 241, 241) ;
+    font-size: 24px !important;
   }
    
   .s-rep-image {

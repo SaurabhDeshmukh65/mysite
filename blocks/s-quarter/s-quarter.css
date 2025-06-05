@@ -1,3 +1,6 @@
+body{
+  background-color: #000;
+}
 .s-quarter-block {
     display: flex;
     justify-content: space-between;

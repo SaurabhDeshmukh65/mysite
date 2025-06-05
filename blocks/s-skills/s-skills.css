@@ -1,8 +1,11 @@
+body{
+  background-color: #000;
+}
 .skills-block {
     width: auto;
     max-width: auto;
     font-family: Arial, sans-serif;    
-    background: #000;
+    background-color: #000;
     border-radius: 8px;
     margin-left: 120px;
     padding-left: 24px;
