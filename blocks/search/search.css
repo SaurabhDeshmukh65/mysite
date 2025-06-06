@@ -1,6 +1,7 @@
 /* Container for the search input and button */
 .search.block .search-wrapper {
   display: flex;
+  justify-content: flex-end; /* Aligns search bar to the right */
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
@@ -53,6 +54,8 @@
     margin-bottom: 8px;
   }
 }
+
+/* General input style */
 .input {
   border: none;
   outline: none;
