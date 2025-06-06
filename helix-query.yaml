@@ -1,17 +1,17 @@
-version: 1
+# version: 1
  
-indices:
-  mysite:
-    include:
-      - '**'
+# indices:
+#   mysite:
+#     include:
+#       - '**'
     
-    target: /query-index
-    properties:
-      og:title:
-        select: head > meta[property="og:title"]
-        value: attribute(el, 'content')
-      tag:
-        select: head > meta[name="tag"]
-        value: attribute(el, 'content')
+#     target: /query-index
+#     properties:
+#       og:title:
+#         select: head > meta[property="og:title"]
+#         value: attribute(el, 'content')
+#       tag:
+#         select: head > meta[name="tag"]
+#         value: attribute(el, 'content')
  
  
