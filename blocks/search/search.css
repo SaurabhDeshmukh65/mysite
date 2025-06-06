@@ -5,8 +5,8 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
-  max-width: 100%;
-  padding: 10px;
+  max-width: 50px;
+  padding-left: 1210px;
 }
 
 /* Updated input style */
