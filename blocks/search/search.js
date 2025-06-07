@@ -22,7 +22,7 @@ export default function decorate(block) {
         const pages = json.data;
  
         const match = pages.find(page => {
-          const titleMatch = page['og:title']?.toLowerCase().includes(query);
+          const titleMatch = page['title']?.toLowerCase().includes(query);
           const tagMatch = page['tag']?.toLowerCase().includes(query);
           return titleMatch || tagMatch;
         });
