@@ -1,0 +1,16 @@
+{
+    "project":"mysite",
+    "plugins":[
+        {
+            "id":"copilot-assist",
+            "title":"copilot-assist",
+            "environments":["live","preview","dev"],
+            "url":"https://copilot.cloud.microsoft",
+            "passConfig":true,
+            "passReferrer":true,
+            "excludePaths":[],
+            "includePaths":["**.docs**"]
+        }
+    ]
+   
+}
