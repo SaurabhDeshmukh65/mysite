@@ -2,10 +2,10 @@
     "project":"mysite",
     "plugins":[
         {
-            "id":"google-assist",
-            "title":"Google-assist",
+            "id":"copilot-assist",
+            "title":"Copilot-assist",
             "environments":["live","preview","dev"],
-            "url":"https://www.google.com/search?q=edge+delivery+services",
+            "url":"https://copilot.cloud.microsoft/",
             "passConfig":true,
             "passReferrer":true,
             "excludePaths":[],
