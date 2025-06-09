@@ -5,7 +5,18 @@
             "id":"copilot-assist",
             "title":"Copilot-assist",
             "environments":["live","preview","dev"],
-            "url":"https://copilot.cloud.microsoft/",
+            "url":"https://copilot.cloud.microsoft",
+            "passConfig":true,
+            "passReferrer":true,
+            "excludePaths":[],
+            "includePaths":["**.docs**"]
+        },
+
+        {
+            "id":"Sidekick-Library",
+            "title":"Sidekick-Library",
+            "environments":["edit"],
+            "url":"/tools/sidekick/library.html",
             "passConfig":true,
             "passReferrer":true,
             "excludePaths":[],
