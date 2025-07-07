@@ -1,70 +1,95 @@
 .eds-block {
-    padding: 2rem;
-    font-family: 'Segoe UI', sans-serif;
-    background: #fff;
-  }
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+}
+
+.eds-tab-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0px;
+  padding: 1rem;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.eds-tab-button {
+  flex: 1 0 auto;
+  padding: 1rem;
+  background: #757272;
+  border: 2px solid #bbb;
+  border-radius: 0px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.3s;
+  white-space: nowrap;
+  color: white;
+}
+
+.eds-tab-button:hover,
+.eds-tab-button.active {
+  background: #b0b0b0;
+  border-color: #999;
+}
+
+.eds-tab-content {
+  padding: 32px;
+  background: #fafafa;
+  border-top: 1px solid #ddd;
+  border-radius: 0px;
+  margin-top: 20px;
+}
+
+.eds-tab-content > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+}
+
+.eds-content {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.eds-image {
+  flex: 1;
+  text-align: center;
+}
+
+.eds-image img,
+.eds-image picture {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* New class for full-width content */
+.eds-full-width {
+  flex: 1 1 100%;
+}
+
+@media (max-width: 768px) {
   .eds-tab-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 0 2rem 2rem;
-    padding: 1rem;
-    background: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    flex-direction: column;
   }
+
   .eds-tab-button {
-    flex: 1;
-    padding: 1rem;
-    background: #757272;
-    border: 2px solid #bbb;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 600;
-    text-align: center;
-    transition: 0.3s;
+    margin-bottom: 0.5rem;
   }
-  .eds-tab-button:hover,
-  .eds-tab-button.active {
-    background: #b0b0b0;
-    border-color: #999;
+
+  .eds-tab-content > div {
+    flex-direction: column;
   }
-  .eds-tab-content {
-    padding: 2rem;
-    margin: 0 2rem;
-    background: #fafafa;
-    border-top: 1px solid #ddd;
-    border-radius: 8px;
-  }
-  .eds-layout {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
-  }
-  .eds-content,
-  .eds-description {
-    flex: 1;
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.6;
-  }
+
   .eds-image {
-    flex: 1;
-    text-align: right;
+    text-align: center;
   }
-  .eds-image img,
-  .eds-image picture {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  @media (max-width: 768px) {
-    .eds-layout { flex-direction: column; }
-    .eds-image { text-align: center; }
-    .eds-tab-buttons { flex-direction: column; margin: 0 1rem 2rem; }
-    .eds-tab-button { margin: 0.5rem 0; }
-    .eds-tab-content { margin: 0 1rem; }
-  }
-  
+}
