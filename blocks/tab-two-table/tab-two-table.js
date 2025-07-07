@@ -48,11 +48,16 @@ export default function decorate(block) {
     const content = e.target.tabContent;
     contentContainer.innerHTML = '';
     contentContainer.appendChild(content);
+    
+
+    tabContainer.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+    e.target.classList.add('active');
   });
 
   // Show first content by default
   const firstButton = tabContainer.querySelector('.tab-two-button');
   if (firstButton) {
+    firstButton.classList.add('active');
     contentContainer.appendChild(firstButton.tabContent);
   }
 
