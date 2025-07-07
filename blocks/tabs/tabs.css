@@ -16,6 +16,7 @@
   overflow-x: auto;
 }
 
+/* Tab Buttons */
 .eds-tab-button {
   flex: 1 0 auto;
   padding: 1rem;
@@ -36,6 +37,7 @@
   border-color: #999;
 }
 
+/* Tab Content */
 .eds-tab-content {
   padding: 32px;
   background: #fafafa;
@@ -69,11 +71,6 @@
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* New class for full-width content */
-.eds-full-width {
-  flex: 1 1 100%;
 }
 
 @media (max-width: 768px) {
