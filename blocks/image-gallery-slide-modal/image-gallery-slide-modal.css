@@ -1,32 +1,39 @@
-/* Image Gallery Layout */
+/* Gallery Container */
 .custom-image-gallery {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 1200px;
-  
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
+/* Heading Row */
 .custom-gallery-heading {
   font-size: 24px;
   font-weight: 600;
   text-align: left;
   margin-bottom: 4px;
+  text-align: justify;
 }
 
-.custom-gallery-container {
+/* Each row in the gallery */
+.custom-image-gallery > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   align-content: center;
 }
 
+/* Columns */
 .custom-gallery-column {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
+/* Image Styling */
 .custom-gallery-column picture,
 .custom-gallery-column img {
   width: 100%;
@@ -47,34 +54,36 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 950px;
-  height: 650px;
-  background-color: rgba(0,0,0,0.85);
+  width: 90%;
+  max-width: 950px;
+  max-height: 90%;
+  background-color: rgba(0, 0, 0, 0.85);
   justify-content: center;
   align-items: center;
   z-index: 9999;
   flex-direction: column;
-  padding: 50px;
+  padding: 30px;
   box-sizing: border-box;
   transform: translate(-50%, -50%);
+  overflow: auto;
 }
 
+/* Modal Image */
 .custom-image-modal img.custom-modal-img {
-  
-  max-width: calc(100% - 100px);
-  max-height: calc(100% - 100px);
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  max-height: calc(100vh - 150px);
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
-  width: 700px;
-  height: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Close Button */
 .custom-image-modal .custom-close-btn {
   position: absolute;
-  top: 50px;
-  right: 50px;
-  font-size: 32px;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
   color: white;
   cursor: pointer;
   background: none;
@@ -87,7 +96,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 48px;
+  font-size: 36px;
   color: white;
   background: none;
   border: none;
@@ -97,9 +106,41 @@
 }
 
 .custom-image-modal .custom-prev {
-  left: 30px;
+  left: 20px;
 }
 
 .custom-image-modal .custom-next {
-  right: 30px;
+  right: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .custom-image-gallery > div {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-gallery-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .custom-image-modal {
+    padding: 20px;
+  }
+
+  .custom-image-modal img.custom-modal-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .custom-image-modal .custom-close-btn {
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+  }
+
+  .custom-image-modal .custom-nav-btn {
+    font-size: 32px;
+    padding: 8px;
+  }
 }
